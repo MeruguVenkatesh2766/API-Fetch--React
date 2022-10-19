@@ -6,7 +6,7 @@ const App = () => {
   useEffect(()=>{
     axios.get("https://jsonplaceholder.typicode.com/photos")
     .then(res=>setData(res.data))
-  })
+  },[])
   const handler=e=>{
     setVal(e.target.value)
   }
